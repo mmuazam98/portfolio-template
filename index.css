@@ -1,0 +1,268 @@
+body{
+  font-family: "Oxanium";
+  background: -moz-linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);
+  background: -webkit-linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);
+  
+  background-color: rgba(206, 37, 77, 0.6);
+  background: linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);  
+  overflow-x: hidden!important;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+html{
+scroll-behavior: smooth;
+}
+.navbar{
+background: none;
+border: none;
+
+}
+.navbar-header button{
+background-color: none;
+border: none;
+
+}
+.navbar-header button:hover{
+background-color: black;
+}
+
+#myNavbar li a{
+color: aliceblue;
+}
+#myNavbar li a:hover{
+padding-bottom: 0;
+border-bottom: 2px solid rgba(206, 37, 77, 0.6);
+font-size: medium;
+
+}
+
+#logo{
+width: 60px;
+padding: 5px;
+}
+a{
+text-decoration: none;
+color: aliceblue;
+}
+
+.seprate-line {
+height: 3px;
+background-color: transparent;
+margin-bottom: 10px;
+animation: animate1 2s forwards ;
+animation-iteration-count: 3;
+animation-delay: 0s;
+}
+@keyframes animate1 {
+0% {background-color:rgba(8, 11, 196, 0.69);width:0%;}
+25% {background-color:rgba(8, 11, 196, 0.69);}
+50% {background-color:rgba(211, 41, 81, 0.6);width:50%;}
+75% {background-color:rgba(211, 25, 68, 0.6);}
+100% {background-color:rgba(212, 0, 50, 0.6);width:100%;}
+}
+
+[data-aos="rotate-ac"] {
+transform: rotate(1800deg);
+transition-property: transform;
+
+}
+[data-aos="rotate-ac"].aos-animate {
+transform: rotate(0deg);
+}
+.Home-items h1,p{
+display: grid;
+
+}
+.Home-items h1{
+font-weight: 900;
+font-size: 50px;
+}
+.Home-items p{
+font-weight: bold;
+color: rgb(255, 255, 255);
+}
+
+.Home-items #mainlogo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 36%;
+transition: all 1.2s ease-in-out;
+}
+
+.Home-items #mainlogo:hover {
+transform: rotate(1080deg);
+}
+
+
+#About .container{
+width: 100%;
+}
+p {
+font-size: 16px;
+}
+.margin {
+margin-bottom: 30px;
+}
+
+
+/*Section bgs*/
+.bg-1 { 
+background-color: teal; 
+
+color: #000000;
+}
+.bg-1 h1{
+text-decoration: underline;
+font-weight: bolder;
+}
+.bg-1 button{
+background-color: black;
+margin-bottom: 20px;
+border: none;
+font-weight:bold ;
+}
+.bg-1 button:hover{
+color: black;
+background-color: white;
+}
+.bg-2 { 
+background-color: #b9b9b9; 
+color: #000000;
+
+}
+.bg-3 { 
+
+background-color: teal; 
+
+color: #000000;
+}
+.bg-4 { 
+background-color: #2f2f2f; 
+color: #fff;
+
+}
+.bg-5{
+background-color: #b9b9b9;
+color: black;
+}
+.bg-6{
+   background-color: indigo;
+   color: black;
+}
+.bg-7{
+  background: transparent;
+}
+
+
+/*Skills*/
+#Skills,#Projects h1{
+text-decoration: underline;
+font-weight: bolder;
+color: black;
+text-transform: uppercase;
+
+}   
+#Skills p{
+color:black;
+font-size: 20px;
+font-weight: 900;
+margin-bottom: 0;
+}
+.skills {
+animation: animate3 6s forwards ease-in-out;
+height: 15px;
+animation-delay: 3.5s;         
+border-radius: 5px;
+}
+@keyframes animate3 {
+from {
+width: 0%;
+}
+
+}
+
+.skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 50px;
+}
+
+.html {
+width: 70%;
+
+background-color: teal;
+margin-bottom: 10px;
+}
+.css {
+width: 60%;
+background-color: teal;
+margin-bottom: 10px; 
+}
+.js {
+width: 40%;
+background-color: teal;
+margin-bottom: 10px;
+}
+.bs {
+width: 60%;
+background-color: teal;
+margin-bottom: 10px;
+}
+.jq {
+width: 25%;
+background-color: teal;
+margin-bottom: 10px; 
+}
+.sql {
+width: 33%;
+background-color: teal;
+margin-bottom: 10px;
+}
+.cpp {
+width: 65%;
+background-color: teal;
+margin-bottom: 10px;
+}
+.java{
+width: 20%;
+background-color: teal;
+margin-bottom: 50px;}
+
+
+/*projects*/
+
+#Projects h2{
+text-align: center;
+font-weight: bolder;
+text-decoration: underline;
+text-transform: uppercase;
+}
+
+#Projects button{
+background: teal;
+color: white;
+}
+
+/*contact footer*/
+#Contact .container{
+
+width: 100%;
+}
+#Contact h2{
+font-weight: bolder;
+text-decoration: underline;
+text-transform: uppercase;
+}
+.row a{
+color: black;
+}
+.row {
+padding: 15px;
+}
+footer{
+padding: 2.5vh;
+height: 10vh;
+width: 100%;
+}
