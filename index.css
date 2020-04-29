@@ -110,7 +110,11 @@ margin-right: auto;
 width: 36%;
 transition: all 1.2s ease-in-out;
 }
-
+@media(max-width:700px){
+   .Home-items #mainlogo {
+     margin-top: -20vh;
+  }
+}
 .Home-items #mainlogo:hover {
 transform: rotate(1080deg);
 }
