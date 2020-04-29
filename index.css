@@ -1,17 +1,37 @@
 body{
   font-family: "Oxanium";
+  overflow-x: hidden!important;
+ /* background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+ 
+  
   background: -moz-linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);
   background: -webkit-linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);
   
   background-color: rgba(206, 37, 77, 0.6);
-  background: linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);  
-  overflow-x: hidden!important;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+  background: linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);*/  
+  background: teal;
+  
 }
+html{
+  height: 100%;
+}
+
 html{
 scroll-behavior: smooth;
 }
+.preloader
+ {
+        width: 100%;
+        height: 100%;
+        
+        background: url('preloader5.gif') center no-repeat rgb(212, 0, 50);
+        z-index: 99999;
+        position: fixed;
+    }
+   
+/*mainbody*/
 .navbar{
 background: none;
 border: none;
@@ -31,9 +51,9 @@ color: aliceblue;
 }
 #myNavbar li a:hover{
 padding-bottom: 0;
-border-bottom: 2px solid rgba(206, 37, 77, 0.6);
+border-bottom: 2px solid rgba(247, 0, 58, 0.6);
 font-size: medium;
-
+color: rgb(148, 148, 148);
 }
 
 #logo{
@@ -62,7 +82,7 @@ animation-delay: 0s;
 }
 
 [data-aos="rotate-ac"] {
-transform: rotate(1800deg);
+transform: rotate(2700deg);
 transition-property: transform;
 
 }
@@ -83,6 +103,7 @@ color: rgb(255, 255, 255);
 }
 
 .Home-items #mainlogo {
+  margin-top: -35vh;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -104,11 +125,110 @@ font-size: 16px;
 .margin {
 margin-bottom: 30px;
 }
+.ball1{
+  color: orange;
+  width: 20px;
+  background-color: orange;
+  border: 1px solid orange;
+  border-radius: 100px;
+  margin: 10px;
+  -moz-animation: bounce1 2s infinite;
+  -webkit-animation: bounce1 3s infinite;
+  animation: bounce1 2s infinite;
+  opacity: 0.5;
+}
+
+@keyframes bounce1 {
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100vw);
+  }
+  100% {
+    transform: translateY(-100vw);
+  }
+}
+.ball4{
+  color: yellow;
+  width: 20px;
+  background-color: yellow;
+  border: 1px solid yellow;
+  border-radius: 100px;
+  margin: 10px;
+  -moz-animation: bounce4 4s infinite;
+  -webkit-animation: bounce4 4s infinite;
+  animation: bounce4 4s infinite;
+  opacity: 0.5;
+}
+
+@keyframes bounce4 {
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100vw);
+  }
+  100% {
+    transform: translateY(-100vw);
+  }
+}
+.ball2{
+  color: red;
+  width: 20px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 100px;
+  margin: 10px;
+  -moz-animation: bounce2 3s infinite;
+  -webkit-animation: bounce2 3s infinite;
+  animation: bounce2 3s infinite;
+  opacity: 0.5;
+
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+.ball3{
+  color: white;
+  width: 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin: 10px;
+  -moz-animation: bounce3 4s infinite;
+  -webkit-animation: bounce3 4s infinite;
+  animation: bounce3 4s infinite;
+  opacity: 0.5;
+
+}
+
+@keyframes bounce3 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
 
 
 /*Section bgs*/
 .bg-1 { 
 background-color: teal; 
+background: linear-gradient(to left bottom, #02f4c1,teal );
 
 color: #000000;
 }
@@ -134,7 +254,7 @@ color: #000000;
 .bg-3 { 
 
 background-color: teal; 
-
+background: linear-gradient(to left bottom, #02f4c1,teal );
 color: #000000;
 }
 .bg-4 { 
@@ -147,11 +267,31 @@ background-color: #b9b9b9;
 color: black;
 }
 .bg-6{
-   background-color: indigo;
-   color: black;
+  
+  background: -moz-linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);
+  background: -webkit-linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);
+  
+  background-color: rgba(206, 37, 77, 0.6);
+  background: linear-gradient( left, rgba(212, 0, 50, 0.6), rgba(8, 11, 196, 0.69) 100%);  
+  background-size: 400% 400%;
+  animation: gradient 8s ease-in-out infinite;
 }
-.bg-7{
-  background: transparent;
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.carousel-inner img {
+  width: 100%;
+ 
 }
 
 
@@ -193,41 +333,49 @@ border-radius: 50px;
 width: 70%;
 
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px;
 }
 .css {
 width: 60%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px; 
 }
 .js {
 width: 40%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px;
 }
 .bs {
 width: 60%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px;
 }
 .jq {
-width: 25%;
+width: 20%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px; 
 }
 .sql {
-width: 33%;
+width: 25%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px;
 }
 .cpp {
 width: 65%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 10px;
 }
 .java{
-width: 20%;
+width: 15%;
 background-color: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 margin-bottom: 50px;}
 
 
@@ -241,11 +389,17 @@ text-transform: uppercase;
 }
 
 #Projects button{
-background: teal;
+background: linear-gradient(to left bottom, #02f4c1,teal );
 color: white;
+transition: all 1s ease-in-out;
+}
+#Projects button:hover{
+  color: #02f4c1;
+  background: #fff;
+  transform: scale(1.2);
 }
 
-/*contact footer*/
+/*contact & footer*/
 #Contact .container{
 
 width: 100%;
@@ -261,8 +415,133 @@ color: black;
 .row {
 padding: 15px;
 }
-footer{
+.contact a{
+  font-size: 17px;
+  color: rgb(32, 32, 32);
+  font-weight: 50;
+}
+.icons i{
+  color: rgb(68, 68, 68);
+  margin: 0 5px;
+  transition: all 1s ease-in-out;
+}
+.icons i:hover{
+   transform: rotate(720deg);
+   
+}
+
+/*footer{
 padding: 2.5vh;
 height: 10vh;
 width: 100%;
+margin-bottom: 0;
+}*/
+
+footer {
+  width:auto;
+  margin-top: -40vh;
+  bottom:0px;
 }
+footer div {
+  position: relative;
+  background-color:teal;
+  margin: -5vh 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+@media (max-width: 900px) {
+  footer{
+    margin-top: -10vh;
+  }
+  footer div {
+    background-color:teal;
+    margin: -5vh 0px 0px 0px;}
+}
+svg {
+  width:100%;
+}
+.arrow {
+  stroke-width: .7px;
+  stroke:rgb(0, 0, 0);
+}
+.topball {
+  animation: ball 1.5s ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+  cursor:pointer;
+}
+footer img{
+    margin-top: -15vh;
+}
+@media (max-width: 767px) {
+    footer img{
+        margin-top: -5vh;
+    }
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: rgb(0, 128, 128);
+}
+.drop {
+  fill: transparent;
+  animation: drop 5s ease infinite normal;
+  stroke: rgb(0, 201, 201);
+  stroke-width:0.5;
+  opacity:.6; 
+  transform: translateY(80%);
+}
+.drop1 {
+  transform-origin: 20px 3px;
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+  transform-origin: 25px 3px;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+  transform-origin: 16px 3px;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
+}
+
