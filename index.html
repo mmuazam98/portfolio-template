@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1" />
     <!--preloader-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-     $(window).load(function() {
-  $(".loader").delay(2000).fadeOut("slow");
-  $("#overlayer").delay(2000).fadeOut("slow");
-})
-
-function display(){
-  alert("Currently unavailable!");
-}
-
-
-
-  </script>
+    <script src="index.js">
+    </script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- fontawesome -->
@@ -45,7 +34,7 @@ function display(){
     <link rel="stylesheet" type="text/css" href="index.css" />
 
     <title>My Portfolio</title>
-    <link rel="icon" href="MZ3.png" type="image/ico" />
+    <link rel="icon" href="images/MZ3.png" type="image/ico" />
 
   </head>
   <body>
@@ -60,18 +49,20 @@ function display(){
         <nav class="navbar navbar-default">
           <div class="container">
             <div class="navbar-header">
+              <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <i onclick="myFunction(this)" class="fas fa-angle-double-down"></i>                       
+              </button> -->
+              
+              <img src="images/MZ3.png" alt="" id="logo" data-aos="fade-right" data-aos-delay="200">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
+                <i onclick="myFunction(this)" class="fas fa-angle-double-down" ></i>
               </button>
-              <img src="MZ3.png" alt="" id="logo" data-aos="fade-right" data-aos-delay="200">
             </div>
             <div class="collapse navbar-collapse" id="myNavbar" data-aos="fade-left" data-aos-delay="200">
               <ul class="nav navbar-nav navbar-right ">
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Projects">Portfolio</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#Contact">Contact</a></li>
               
@@ -89,7 +80,7 @@ function display(){
                 <div class="container">
                   <div class="Home-items container">
                     <div data-aos="rotate-ac" data-aos-duration="2000" data-aos-easing="ease-in-out">
-                    <img src="MZ3.png" alt="logo" class="img-responsive" id="mainlogo"></div>
+                    <img src="images/MZ3.png" alt="logo" class="img-responsive" id="mainlogo"></div>
                         <div class="seprate-line container"></div>
                     <div class="text-center" >
                     <h2 class="main-heading" style="font-weight: bolder;" data-aos="fade-zoom-in" data-aos-delay="150">
@@ -99,7 +90,7 @@ function display(){
                     <p data-aos="fade-zoom-out" data-aos-delay="300" style="font-size: 22px;">السلام عليكم ورحمة الله وبركاته</p>
                     <p data-aos="fade-right" data-aos-delay="200">I am Mohammad Muazam.</p>
                     <p data-aos="fade-left" data-aos-delay="200">A young & aspiring web designer-cum-developer. </p>
-                    <p data-aos="fade-right" data-aos-delay="200">Welcome to my portfolio.</p></div>
+                    <p data-aos="fade-right" data-aos-delay="200">Welcome to my website.</p></div>
                    </div>
                   </div>
                 </div>
@@ -113,7 +104,7 @@ function display(){
               <div id="about" class="container bg-1">
               <div class="row" >
                 <div class="col-sm-4" data-aos="fade-left" >
-              <img src="image2.jpg" alt="" class="img-thumbnail img-circle margin" width="304" height="246" style="height: 350px;width: 280px; margin-left: 50px;">
+              <img src="images/myimage.jpg" alt="" class="img-thumbnail img-circle margin" width="304" height="246" style="height: 350px;width: 280px; margin-left: 50px;">
                   
                 </div>
                 <div class="col-sm-8" data-aos="fade-right" >
@@ -181,7 +172,7 @@ function display(){
               
      <!--gallery-->       
      <section id="gallery" class="bg-1" >
-     <div class="container">
+     <div class="container gallery">
       <h1 class="text-center margin" data-aos="fade-zoom-in" data-aos-delay="300" style="font-weight: bolder; text-decoration: underline;">GALLERY</h1>
       <div id="myCarousel" class="carousel slide" data-ride="carousel" data-aos="fade-zoom-out" data-aos-delay="400" data-aos-duration="1000">
         
@@ -195,21 +186,21 @@ function display(){
     
         <div class=" carousel-inner">
           <div class="item active">
-            <img src="img3.jpg" alt="img" width="1100" height="200">
+            <img src="images/img3.jpg" alt="img" width="100" height="200">
           </div>
     
           <div class="item">
-            <img src="img1.jpg" alt="img" width="1100" height="200">
+            <img src="images/img1.jpg" alt="img" width="100" height="200">
           </div>
         
           <div class=" item">
-            <img src="img4.jpg" alt="img" width="1100" height="200">
+            <img src="images/img4.jpg" alt="img" width="100" height="200">
           </div>
           <div class=" item">
-            <img src="img5.jpg" alt="img" width="1100" height="200">
+            <img src="images/img5.jpg" alt="img" width="100" height="200">
           </div>
           <div class=" item">
-            <img src="img2.jpg" alt="img" width="1100" height="200">
+            <img src="images/img2.jpg" alt="img" width="100" height="200">
           </div>
         </div>
     
@@ -230,12 +221,12 @@ function display(){
 
     <!--project-->
               <section id="Projects" class="">
-              <div class="container-fluid bg-3 text-center">    
+               <div class="container-fluid bg-3 text-center">    
                 <h1 class="" data-aos="fade-right" data-aos-delay="200">Projects</h1><br>
                 
                   
                   <div class="container card text-white margin" 
-                  style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 60%;">
+                  style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 40%;">
                     <div class="card-body text-center"data-aos="fade-left" data-aos-delay="200" >
                       
                        <h2 style="color: black; font-weight: bolder; text-decoration: underline;">BOROGRAM</h2>
@@ -246,20 +237,63 @@ function display(){
                        <button class="btn  btn-lg margin" onclick='window.open("https://mm1025web.github.io/myweb");'>View</button>
                     </div>
                    </div>
+
                    <div class="container card text-white margin" 
-                  style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 60%;">
+                  style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 40%;">
                     <div class="card-body text-center"data-aos="fade-left" data-aos-delay="200" >
                       
-                       <h2 style="color: black; font-weight: bolder; text-decoration: underline;">COVID19-Tracker</h2>
+                       <h2 style="color: black; font-weight: bolder; text-decoration: underline;">COVID19</h2>
                        <p>
                          Website for knowledge and tracking of Corona Virus(COVID-19).
                        </p>
-                       <p><span style="color: black; font-weight: bolder;">Developed using:</span> HTML5, CSS3, BOOTSTRAP4, JS.</p>
-                       <button class="btn  btn-lg margin" onclick='window.open("https://mm1025web.github.io/covid19tracker");'>View</button>
+                       <p><span style="color: black; font-weight: bolder;">Developed using:</span> HTML5, CSS3, BOOTSTRAP4, JS, PHP.</p>
+                       <button class="btn  btn-lg margin" onclick='window.open("http://covidglobal.000webhostapp.com/");'>View(1)</button>
+                       <button class="btn  btn-lg margin" onclick='window.open("https://mm1025web.github.io/covid19tracker");'>View(2)</button>
+                       <button class="btn  btn-lg margin" onclick='window.open("http://covidglobal.000webhostapp.com/india.html");'>View(3)</button>
                     </div>
                    </div>
+
+                   <div class="container card text-white margin" 
+                  style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 40%;">
+                    <div class="card-body text-center"data-aos="fade-left" data-aos-delay="200" >
+                      
+                       <h2 style="color: black; font-weight: bolder; text-decoration: underline;">CALCULATOR</h2>
+                       <p>
+                          A simple calculator using advanced JS. 
+                       </p>
+                       <p><span style="color: black; font-weight: bolder;">Developed using:</span> HTML5,CSS3,JS.</p>
+                       <button class="btn  btn-lg margin" onclick='window.open("https://mm1025web.github.io/calculator/");'>View</button>
+                    </div>
+                   </div>
+
+                   <div class="container card text-white margin" 
+                   style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 40%;">
+                     <div class="card-body text-center"data-aos="fade-left" data-aos-delay="200" >
+                       
+                        <h2 style="color: black; font-weight: bolder; text-decoration: underline;">NIKE STORE</h2>
+                        <p>
+                           Genuine UI Nike store with different shoes available in different colors.  
+                        </p>
+                        <p><span style="color: black; font-weight: bolder;">Developed using:</span> HTML5,CSS3,BOOTSTRAP4,JS.</p>
+                        <button class="btn  btn-lg margin" onclick='window.open("https://mm1025web.github.io/nike.com/");'>View</button>
+                     </div>
+                    </div>
+
+                    <div class="container card text-white margin" 
+                    style="background-color: #b9b9b9; color: rgb(71, 71, 71); box-sizing: border-box; border: 1px solid bisque;border-radius: 10px; width: 40%;">
+                      <div class="card-body text-center"data-aos="fade-left" data-aos-delay="200" >
+                        
+                         <h2 style="color: black; font-weight: bolder; text-decoration: underline;">J&K-T&T</h2>
+                         <p>
+                            Tourism Web App for Jammu & Kashmir. 
+                         </p>
+                         <p><span style="color: black; font-weight: bolder;">Developed using:</span> HTML5,CSS3,JS.</p>
+                         <button class="btn  btn-lg margin" onclick='window.open("https://jktourism.netlify.app/");'>View</button>
+                      </div>
+                     </div>
                   </div>
-              </div>
+              </div> 
+        
               </section>
              
 <!--contact-->
