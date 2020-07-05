@@ -291,7 +291,6 @@ display: grid;
 }
 .Home-items h2{
 font-weight: 900;
-font-size: 30px;
 color: #7e7e7e;
 }
 .Home-items p{
@@ -301,12 +300,32 @@ color: rgb(255, 255, 255);
 
 .Home-items #mainlogo {
 display: block;
-margin-left: auto;
-margin-right: auto;
-width: 36%;
+margin:0 auto;
+width: 33%;
 transition: all 1.2s ease-in-out;
 }
-
+@media(max-width:1000px){
+   .Home-items #mainlogo {
+        width: 40%;
+    }
+}
+@media(max-width:1048px){
+  .myImage{
+      margin-left: 5px!important;
+  }
+}
+@media(max-width:530px){
+  .Home-items #mainlogo {
+       width: 60%;
+   }
+   .name{
+     font-size: 21px;
+     letter-spacing: 1px;
+   }
+   .myImage{
+    margin-left: 5px!important;
+  }
+}
 .Home-items #mainlogo:hover {
 transform: rotate(1080deg);
 }
@@ -321,8 +340,19 @@ font-size: 16px;
 .margin {
 margin-bottom: 30px;
 }
-
-
+.name{
+  font-family: 'Yellowtail', cursive;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+.main-heading{
+  font-family: 'Bangers', cursive;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+.myImage{
+  margin-left: 50px;
+}
 /*Section bgs
 .bg-1 { 
 background-color: teal; 
@@ -476,45 +506,35 @@ margin-bottom: 50px;}
 
 
 /*projects*/
-#Projects .card{
+#Projects .row{
+    margin: 0 0 40px 0;
+}
+ #Projects .projectBody{
      transform: skew(-10deg);
      padding: 0 50px 0 35px;
      overflow: hidden;
+     background: #b9b9b9;
      box-shadow: 0 0px 15px rgba(116, 116, 116, 0.9);
+     border-top-right-radius:30px ;
+     border-bottom-left-radius: 30px;
      transition: all 0.5s ease-in-out;
 }
-#Projects .card:hover {
+#Projects .projectBody:hover {
    transform: scale(1.1) skew(-10deg);
    box-shadow: 0 0px 25px rgba(146, 146, 146, 0.9);
-   
-   
 }
-
-#Projects .card .card-body{
-  transform: skew(10deg);
-
+#Projects .projectHeader{
+  color: #b9b9b9;
 }
-@media(max-width:1025px){
- #Projects .card .card-body{
-      transform: skew(5deg);
-  }
-  #Projects .card:hover {
-    transform: scale(1.1) skew(-5deg);}
-  #Projects .card{
-    width: 70%!important;
-    padding:0 8px;
-    transform: skew(-5deg);
-  }
+.projectTitle{
+  font-family: fantasy;
 }
-#Projects h1{
-   color: rgb(151, 151, 151);
-   text-decoration: underline;
-}
-#Projects h2{
-text-align: center;
-font-weight: bolder;
-text-decoration: underline;
-text-transform: uppercase;
+.projectTitle,.projectDescription{
+    transform: skew(10deg);
+    color: rgb(36, 36, 36);
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 #Projects button{
@@ -523,7 +543,7 @@ color: white;
 transition: all .1s ease-in-out;
 }
 #Projects button:hover{
-  color: #02f4c1;
+  color: #000;
   background: #fff;
   transform: scale(1.2);
 }
