@@ -530,7 +530,7 @@ margin-bottom: 50px;}
   font-family: fantasy;
 }
 .projectTitle,.projectDescription{
-    transform: skew(10deg);
+    /* transform: skew(10deg); */
     color: rgb(36, 36, 36);
     text-align: center;
     font-weight: bolder;
@@ -541,6 +541,7 @@ margin-bottom: 50px;}
 background: linear-gradient(to left bottom,rgb(148, 148, 148),#000 );
 color: white;
 transition: all .1s ease-in-out;
+
 }
 #Projects button:hover{
   color: #000;
@@ -548,7 +549,12 @@ transition: all .1s ease-in-out;
   transform: scale(1.2);
 }
 
-
+@media(max-width:470px){
+  #Projects button{
+    display: inline;
+    margin: -5px 0 7px 0;
+  }
+}
 /*contact & footer*/
 #Contact .container{
 
