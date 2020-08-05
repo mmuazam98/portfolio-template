@@ -333,7 +333,9 @@ transition: all 1.2s ease-in-out;
 .Home-items #mainlogo:hover {
 transform: rotate(1080deg);
 }
-
+.Home-items .hello{
+  font-size: 18px;
+}
 
 #About .container{
 width: 100%;
