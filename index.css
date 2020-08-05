@@ -338,8 +338,8 @@ transform: rotate(1080deg);
 #About .container{
 width: 100%;
 }
-p {
-font-size: 16px;
+#About p {
+font-size: 18px;
 }
 .margin {
 margin-bottom: 30px;
