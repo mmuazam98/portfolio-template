@@ -289,6 +289,10 @@ transform: rotate(0deg);
 display: grid;
 
 }
+.Link1 .letter{
+  color: #fff;
+  font-weight: 900;
+}
 .Home-items h2{
 font-weight: 900;
 color: #7e7e7e;
@@ -342,7 +346,7 @@ margin-bottom: 30px;
 }
 .name{
   font-family: 'Yellowtail', cursive;
-  font-size: 23px;
+  font-size: 25px;
   letter-spacing: 2px;
 }
 .main-heading{
